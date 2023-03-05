@@ -1,0 +1,93 @@
+.welcome, .landing{
+  width: 100%;
+  height: 100%;
+}
+.landing{
+  display: flex;
+  align-items: center;
+  background-image: url("images/pozadi header.webp");
+}
+.welcome-text{
+  flex: 1.5;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.welcome-img{
+  flex: 1;
+  margin-left: auto;
+  margin-right: 6rem;
+}
+.zobrazit-produkty{
+  min-width: 20%;
+  min-height: 3rem;
+  border-radius: 30px;
+  margin-top: 1rem;
+}
+.presentation{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.big-bg-variation-1{
+  background-image: url("images/running woman 2.jpeg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.presentation.two-one-ratio > .presentation-text{
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentation.two-one-ratio > .presentation-text::before{
+  background-image: linear-gradient(to top, rgba(0,0,0,.2), rgba(0,0,0,.9));
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.presentation.two-one-ratio > .presentation-image-block{
+  flex: 1;
+}
+.main-text-left{
+  margin-left: 9rem;
+  max-width: 50%;
+}
+.main-text{
+  margin-bottom: 2rem;
+  line-height: 1.2em;
+}
+.additional-text{
+  line-height: 1.7em;
+}
+.main-image-left{
+  margin-right: 2rem;
+}
+.presentation-image-block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.small-bg-variation-1{
+  justify-content: flex-start;  
+  background-image: linear-gradient(to top, rgba(var(--clr-dark-400), 0.8), rgba(253, 23, 23, 0.9));
+  
+  background-image: linear-gradient(to top, var(--clr-primary-300), rgba(0,0,0,0.9));
+  width: 100%;
+}
+.right-presentation-image {
+  transform: translate(-50%);
+  max-width: 70%;
+}
+
+.presentation-text,.presentation-image-block{
+  height: 90%;
+}
