@@ -1,93 +1,182 @@
-.welcome, .landing{
-  width: 100%;
-  height: 100%;
+title {
+  display: none;
 }
-.landing{
+
+.header::after{
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  top:8%;
+  left: 5%;
+  background-image: url('images/Logo.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+body {
+  background-color: black;
+  /*background-image: url( 'images/liquid-cheese.svg' );*/
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top
+}
+
+body>* {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-height {
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  max-height: 1400px;
+}
+
+.height-ninety {
+  height: 90vh;
+  height: 90svh;
+  max-height: 1400px;
+}
+
+.width-fifty {
+  max-width: 50%;
+}
+
+.margin-left {
+  margin-left: 10%;
+}
+
+.margin-right {
+  margin-right: 10%;
+}
+
+.flex-vertically-aligned {
   display: flex;
   align-items: center;
-  background-image: url("images/pozadi header.webp");
 }
-.welcome-text{
-  flex: 1.5;
-  margin-left: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+.grid-vertically-aligned {
+  display: grid;
+  align-items: center;
 }
-.welcome-img{
-  flex: 1;
-  margin-left: auto;
-  margin-right: 6rem;
+
+.grid-horizontally-aligned {
+  display: grid;
+  justify-items: center;
 }
-.zobrazit-produkty{
-  min-width: 20%;
-  min-height: 3rem;
+
+.welcome {
+  /*https://www.joshwcomeau.com/gradient-generator/*/
+  background-image: linear-gradient(
+    340deg,
+    hsl(0deg 0% 0%) 35%,
+    hsl(273deg 96% 8%) 81%,
+    hsl(260deg 100% 14%) 101%
+  );
+  overflow: hidden;
+ 
+
+}
+.welcome::before{
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: -900px;
+  width: 200%;
+  height: 100%;
+  background-image: url(images/wave.svg);
+  background-repeat: no-repeat;
+  filter: blur(40px);
+  opacity: 0.5;
+  transform: rotate(327deg);
+}
+.welcome-text {
+  flex: 1.3 1 0;
+}
+
+.welcome-img {
+  max-width: 500px;
+  flex: 1 1 0;
+}
+
+.zobrazit-produkty {
   border-radius: 30px;
   margin-top: 1rem;
 }
-.presentation{
-  width: 100%;
+
+.web-content {
   height: 100%;
-  display: flex;
-  align-items: center;
 }
 
-.big-bg-variation-1{
+.two-to-one-ratio {
+  gap: 2.5%;
+}
+
+.two-to-one-ratio>*:nth-child(1) {
+  flex: 2 1 0;
+}
+
+.two-to-one-ratio>*:nth-child(2) {
+  flex: 1 1 0;
+}
+
+.main-bg-variation-1 {
   background-image: url("images/running woman 2.jpeg");
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  width: 100%;
+  background-position: left top;
 }
 
-.presentation.two-one-ratio > .presentation-text{
-  flex: 2;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.presentation.two-one-ratio > .presentation-text::before{
-  background-image: linear-gradient(to top, rgba(0,0,0,.2), rgba(0,0,0,.9));
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-.presentation.two-one-ratio > .presentation-image-block{
-  flex: 1;
-}
-.main-text-left{
-  margin-left: 9rem;
-  max-width: 50%;
-}
-.main-text{
-  margin-bottom: 2rem;
-  line-height: 1.2em;
-}
-.additional-text{
-  line-height: 1.7em;
-}
-.main-image-left{
-  margin-right: 2rem;
-}
-.presentation-image-block {
-  height: 100%;
-  display: flex;
-  align-items: center;
+.additional-text {
+  margin-top: 1rem;
 }
 
-.small-bg-variation-1{
-  justify-content: flex-start;  
+.small-bg-variation-1 {
   background-image: linear-gradient(to top, rgba(var(--clr-dark-400), 0.8), rgba(253, 23, 23, 0.9));
-  
-  background-image: linear-gradient(to top, var(--clr-primary-300), rgba(0,0,0,0.9));
+  background-image: linear-gradient(to top, var(--clr-primary-300), rgba(0, 0, 0, 0.9));
   width: 100%;
 }
-.right-presentation-image {
-  transform: translate(-50%);
-  max-width: 70%;
+
+.additional-image {
+  width: 90%;
+  max-width: 500px;
 }
 
-.presentation-text,.presentation-image-block{
-  height: 90%;
+.right-translate-image {
+  transform: translateX(-40%);
+}
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+
+  .margin-left,
+  .margin-right {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .flex-vertically-aligned {
+    flex-direction: column;
+  }
+
+  .width-fifty {
+    max-width: 100%;
+  }
+
+  .right-translate-image {
+    transform: translateX(0);
+  }
+
+  .additional-image {
+    width: 80%;
+    max-width: 300px
+  }
 }
