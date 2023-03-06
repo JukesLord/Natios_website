@@ -2,6 +2,7 @@
   --clr-primary-400: blue;
   --clr-primary-300: lightblue;
   --clr-white: white;
+  --clr-black: black;
 
   --clr-neutral-100: gray;
   --clr-dark-400: rgb(50, 17, 94);
@@ -108,8 +109,14 @@ svg {
 .color-white{
   color: var(--clr-white);
 }
+.color-black{
+  color: var(--clr-black);
+}
 
 
+.backgroud-transparent {
+  background-color: transparent;
+}
 .backgroud-primary-400 {
   background-color: var(--clr-primary-400);
 }
@@ -143,6 +150,7 @@ svg {
 
 .font-size-300{
   font-size: var(--font-size-300);
+  line-height: 1.7em
 }
 .font-size-400{
   font-size: var(--font-size-400);
@@ -155,9 +163,11 @@ svg {
 }
 .font-size-700{
   font-size: var(--font-size-700);
+  line-height: 1.2em;
 }
 .font-size-800{
   font-size: var(--font-size-800);
+  line-height: 1.2em;
 }
 .font-size-900{
   font-size: var(--font-size-900);
