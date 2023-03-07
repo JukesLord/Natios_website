@@ -1,8 +1,4 @@
-
-
 /*
-let box = document.querySelector('.web-content');
-let pos = box.offsetTop;
 
 $(window).bind('mousewheel', function(event) {
   setTimeout(() => {
@@ -33,4 +29,5 @@ window.onscroll=function(){window.scrollTo(x, y);};
 
 setTimeout(() => {
   console.log("this is the first message");
-}, 5000);*/
+}, 5000);
+*/
