@@ -44,7 +44,7 @@
 }
 
 /* Box sizing rules */
-*,
+body *,
 *::before,
 *::after {
   box-sizing: border-box;
