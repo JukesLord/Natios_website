@@ -1,21 +1,38 @@
 :root{
-  --clr-primary-400: blue;
-  --clr-primary-300: lightblue;
+  --clr-primary-400: hsl(189 100% 41%);
+
+  --clr-secondary-400: #7f2c00;
+
+  --clr-neutral-100: #e6f4f1;
+
+
+ 
+  --clr-dark-600: hsl(226 63% 21% / 100%);
+  --clr-dark-400: #1d327b;
+  --clr-dark-300: #0e3d8a; 
+  --clr-dark-200: hsl(212, 100%, 30%);
+
+
+  --clr-dark-600-alpha-05: hsl(226 63% 21% / 50%) ;
+  --clr-dark-200-alpha-05: hsl(212 100% 30% / 50%);
+  --clr-primary-400-alpha-05: hsl(189 100% 41% / 50%);
+  --clr-primary-400-alpha-01: hsl(189 100% 41% / 10%);
+
+
   --clr-white: white;
   --clr-black: black;
 
-  --clr-neutral-100: gray;
-  --clr-dark-400: rgb(50, 17, 94);
-
-  --font-family-primary: 'Be Vietnam Pro', sans-serif;
+  --font-family-primary: 'Roboto', sans-serif;
+  /*--font-family-primary: 'Be Vietnam Pro', sans-serif;*/
   --font-family-body: var(--font-family-primary);
   --font-family-heading: var(--font-family-primary);
 
-  --font-weight-extralight: 200;
+  --font-weight-thin: 100;
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 800;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 900;
 
   --font-size-300: 0.875rem;
   --font-size-400: 1rem;
@@ -97,14 +114,23 @@ svg {
 .color-primary-400 {
   color: var(--clr-primary-400);
 }
-.color-primary-300 {
-  color: var(--clr-primary-300);
+.color-secondary-400 {
+  color: var(--clr-secondary-400);
 }
 .color-neutral-100 {
   color: var(--clr-neutral-100);
 }
+.color-dark-600 {
+  color: var(--clr-dark-400);
+}
 .color-dark-400 {
   color: var(--clr-dark-400);
+}
+.color-dark-300 {
+  color: var(--clr-dark-300);
+}
+.color-dark-200 {
+  color: var(--clr-dark-200);
 }
 .color-white{
   color: var(--clr-white);
@@ -120,19 +146,33 @@ svg {
 .backgroud-primary-400 {
   background-color: var(--clr-primary-400);
 }
-.backgroud-primary-300 {
-  background-color: var(--clr-primary-300);
+.backgroud-secondary-400 {
+  background-color: var(--clr-secondary-400);
 }
 .backgroud-neutral-100 {
   background-color: var(--clr-neutral-100);
 }
+.backgroud-dark-600 {
+  background-color: var(--clr-dark-400);
+}
 .backgroud-dark-400 {
   background-color: var(--clr-dark-400);
 }
+.backgroud-dark-300 {
+  background-color: var(--clr-dark-300);
+}
+.backgroud-dark-200 {
+  background-color: var(--clr-dark-200);
+}
+.backgroud-white{
+  background-color: var(--clr-white);
+}
+.backgroud-black{
+  background-color: var(--clr-black);
+}
 
-
-.font-weight-extralight{
-  font-weight: var(--font-weight-extralight);
+.font-weight-thin{
+  font-weight: var(--font-weight-thin);
 }
 .font-weight-light{
   font-weight: var(--font-weight-light);
@@ -145,6 +185,9 @@ svg {
 }
 .font-weight-bold{
   font-weight: var(--font-weight-bold);
+}
+.font-weight-extrabold{
+  font-weight: var(--font-weight-extrabold);
 }
 
 
